@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// enum =  bir grup bağlantılı değer için ortak bir tür tanımlama 
+
+// Değişkenimizi oluşturup init methodu aracılığı ile bir boy değeri giriyoruz. Method içinde yer alan switch yapısı sayesinde boyun tipi otomatik olarak belirleniyor. 
+enum Boy {
+    case kısa
+    case orta
+    case uzun
+    
+    init(boy: Int){
+        switch boy {
+        case 0..&lt;150: self = .kısa
+        case 150..&lt;180: self = .orta
+        case 180..&lt;250: self = .uzun
+        default: self = .orta 
+            print("Tanımlanmayan boy aralığı")
+        }
+    }
+}
+
+var b1 : Boy = Boy(boy: 177)
+print(b1)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 581}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
